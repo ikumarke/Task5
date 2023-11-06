@@ -1,0 +1,151 @@
+
+1....................................................................................
+
+package com.Example.hr;
+
+public class Employee {
+	
+	String name;
+	int ID;
+	double salary;
+	public void printname(String name) {
+		// TODO Auto-generated method stub
+      this.name=name;
+      System.out.println("Employee name is : "+name);
+	}
+	public void printsalary(double salary) {
+		// TODO Auto-generated method stub
+	      System.out.println("Employee salary is : "+salary);
+	}
+	public void printId(int ID) {
+		// TODO Auto-generated method stub
+		 System.out.println("Employee ID is : "+ID);
+	}
+}
+
+
+package com.Example.hrtest;
+
+import com.Example.hr.Employee;
+
+public class EmployeeTest {
+	public static void main(String[] args) {
+		Employee e = new Employee();
+		e.printname("Ajithkumar");
+		e.printId(1151);
+		e.printsalary(18000);
+	}
+
+}
+
+
+output:   
+
+Employee name is : Ajithkumar
+Employee ID is : 1151
+Employee salary is : 18000.0
+
+2............................................................................
+
+package org.fun;
+
+import java.util.ArrayList;
+
+
+public class Arrylist {
+	public static void main(String[] args) {
+		ArrayList<String> a = new ArrayList<>();
+
+		a.add("my name is ajithkumar");
+		a.add("i am studing in guvi");
+		a.add("now i am working in Amazon");
+		a.add("i have less time to practise");
+		
+		System.out.println(a);
+		
+		boolean removeAll = a.removeAll(a);
+		System.out.println(removeAll);
+		
+		System.out.println(a);
+
+	}
+
+}
+
+Output:
+
+[my name is ajithkumar, i am studing in guvi, now i am working in Amazon, i have less time to practise]
+true
+[]
+
+3......................................................................................
+
+import java.util.TreeMap;
+
+public class Treemap {
+	public static void main(String[] args) {
+		Map<String, Integer> Employes = new TreeMap<>();
+		Employes.put("Ajithkumar", 2);
+		Employes.put("Sugumaran", 1);
+		Employes.put("Murugan", 3);
+		Employes.put("Rockybai", 4);
+		Employes.put("kumar", 5);
+		Employes.put("Bharath", 6);
+		
+
+		
+		System.out.println(Employes.values());
+		
+		for(Entry<String, Integer> Entery : Employes.entrySet()) {
+			System.out.println(Entery.getKey());
+		}
+		
+		Map< String, Integer> Shorted = new TreeMap<>(Employes);
+		for(Entry<String, Integer> Entery : Shorted.entrySet()) {
+			System.out.println(Entery.getKey());
+		
+	}
+	}
+}
+
+
+Output:
+
+[2, 6, 3, 4, 1, 5]
+Ajithkumar
+Bharath
+Murugan
+Rockybai
+Sugumaran
+kumar
+Ajithkumar
+Bharath
+Murugan
+Rockybai
+Sugumaran
+kumar
+
+
+4.................................................................................
+ackage org.all;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListList {
+	
+	public static void main(String[] args) {
+
+List<Object> n = new ArrayList<>();
+		
+		n.add(10);
+		n.add("ajithkumar");
+  }
+}
+
+Output:
+[10, ajithkumar]
+
+
+
+
